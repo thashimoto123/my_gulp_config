@@ -1,0 +1,160 @@
+/* -- RESET
+--------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button,
+input {
+  appearance: button;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  background: none;
+}
+
+/* -- BASE
+--------------------------------------------- */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body, input, textarea, select, button {
+  font-family:  $font-ja;
+  font-weight: 500;
+  color: $color-black;
+  font-size: $font-text-size;
+  line-height: $line-height;
+  -webkit-text-size-adjust: 100%;
+}
+input, textarea, select, button {
+  appearance: button;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  vertical-align: bottom;
+}
+
+img[usemap] {
+  height: auto;
+}
+
+hr {
+  height: 1px;
+  background-color: #DFE3E6;
+  border: none;
+  color: #DFE3E6;
+}
+
+template {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #d2d2d2;
+  font-size: 15px;
+  line-height: 1.75;
+  background-color: #fff;
+  border-radius: 6px;
+}
+input::placeholder {
+  color: $color-gray;
+}
+textarea {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.8;
+  border: 2px solid #d2d2d2;
+  background-color: #fff;
+  &:focus {
+    outline: none;
+    border-color: #0162b5;
+  }
+}
+ruby[data-ruby] {
+  position: relative;
+}
+ruby[data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  line-height: 100%;
+  text-align: center;
+  left: -3em;
+  right: -3em;
+  transform-origin: bottom center;
+  transform: scale(0.5);
+  bottom: 100%;
+}
+ruby[data-ruby] rt {
+  display: none;
+}
+
+i {
+  font-family: 'fontello';
+}
+
+@include sp {
+  body, input, textarea, select, button {
+    font-size: $font-sp-text-size;
+    line-height: $line-height;
+  }
+}

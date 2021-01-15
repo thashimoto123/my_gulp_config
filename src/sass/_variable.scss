@@ -1,0 +1,38 @@
+// layout
+$breakpoint: 768px;
+$content-width: 1000px;
+$content-padding: 50px;
+$sp-content-padding: 25px;
+
+// z-index
+$header-index: 100;
+$menu-index: 200;
+
+// color
+$color-black: #1e1e1e;
+$color-gray: #787878;
+$color-primary: #0c308f;
+$color-secondary: #ffb430;
+$color-tertiary: #55ceec;
+$color-link: #323232;
+
+// font
+$font-ja: 'Noto Sans JP',Hiragino Sans,"ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$font-en: 'Roboto', sans-serif;
+$font-icon: 'fontello';
+$font-text-size: 16px;
+$font-sp-text-size: 15px;
+
+$line-height: 1.5;
+
+// breakpoint
+@mixin sp {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin pc {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}

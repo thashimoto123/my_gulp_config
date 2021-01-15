@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(relativePath + 'include_html/' + '_head', {
+  title: 'ページタイトル',
+  description: 'ページ説明文',
+  extendMeta: `
+  <meta name="keywords" content="キーワード">
+  <meta property="og:title" content="ページタイトル">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://page_url/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://page_url/assets/images/ogp.jpg">
+  <meta property="og:site_name" content="site_name">
+  `,
+  extend: `
+  
+  `,
+}); %>
+<body>
+
+  <%- include(relativePath + 'include_html/' + '_header') %>
+  <div>
+    コンテンツ
+  </div>
+
+  <%- include(relativePath + 'include_html/' + '_footer') %>
+</body>
+</html>
