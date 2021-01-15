@@ -26,7 +26,7 @@ const dest = {
   root: './public/',
   css: './public/assets/css/',
   html: './public/',
-  js: './public/js/'
+  js: './public/assets/js/'
 };
 
 function server() {
