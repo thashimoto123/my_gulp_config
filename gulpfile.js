@@ -92,7 +92,7 @@ function js () {
   }).then(bundle => {
     return bundle.write({
       file: `${dest.js}main.js`,
-      format: 'umd',
+      format: 'cjs',
       name: 'library',
       sourcemap: true
     });
